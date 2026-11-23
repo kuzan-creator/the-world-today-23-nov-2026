@@ -24,12 +24,14 @@ Business 4, Sport & Culture 5).
 ## Run it
 
 ```sh
-python3 main.py
+node main.ts
 ```
 
-`python3 main.py` draws `entry.png` (1024×1024, PIL shapes only, no
-network). The output is deterministic: two runs produce a byte-identical
-PNG.
+`node main.ts` copies the included `entry.png` (1024×1024) to
+`/output/entry.png`. No dependencies, no network. The output is
+deterministic: two runs produce a byte-identical PNG. (`draw.py` is the
+PIL script that originally drew the image; it is kept for provenance
+and is not the entrypoint.)
 
 ---
 
